@@ -1,22 +1,20 @@
 package br.com.fiap.CP2.view;
 
 import br.com.fiap.CP2.dao.BrinquedoDAO;
-import br.com.fiap.CP2.dao.BrinquedoDAOImpl;
+
 import br.com.fiap.CP2.dto.BrinquedoDTO;
 import br.com.fiap.CP2.model.Brinquedo;
-import br.com.fiap.CP2.model.Tamanho;
-import br.com.fiap.CP2.singleton.EntityManagerFactorySingleton;
-import jakarta.persistence.EntityManager;
-import org.springframework.beans.factory.annotation.Autowired;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/brinquedos")
 public class BrinquedoController {
-    EntityManager em = EntityManagerFactorySingleton.getInstance().createEntityManager();
 
-    BrinquedoDAOImpl dao = new BrinquedoDAOImpl(em);
+    @Autowired
+    private BrinquedoDAO dao;
 
     @GetMapping()
     public Brinquedo buscar(@RequestParam int id){

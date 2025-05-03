@@ -1,11 +1,11 @@
 package br.com.fiap.CP2.dao;
 
-import br.com.fiap.CP2.exceptions.CommitException;
-import br.com.fiap.CP2.exceptions.IdNaoEncontradoException;
 import br.com.fiap.CP2.model.Brinquedo;
+import jakarta.transaction.Transactional;
 
-import java.util.List;
-
-public interface BrinquedoDAO extends GenericDao<Brinquedo,Integer>{
-    Brinquedo atualizar(Integer id, Brinquedo brinquedo);
+public interface BrinquedoDAO {
+    public Brinquedo buscar(int id);
+    public void salvar(Brinquedo brinquedo) ;
+    public void atualizar(int id, Brinquedo brinquedo);
+    public void commit();
 }
