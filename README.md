@@ -43,9 +43,9 @@ Permitir a **inserção (Create)** e **consulta (Read)** de brinquedos utilizand
 
 spring.datasource.url=jdbc:oracle:thin:@//oracle.fiap.com.br:1521/ORCL
 
-spring.datasource.username=RM554728
+spring.datasource.username=SeuRM
 
-spring.datasource.password=fiap25
+spring.datasource.password=SuaSenha
 
 spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
 
