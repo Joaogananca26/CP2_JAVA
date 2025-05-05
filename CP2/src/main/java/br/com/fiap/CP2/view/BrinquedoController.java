@@ -9,6 +9,9 @@ import br.com.fiap.CP2.model.Brinquedo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping("/brinquedos")
 public class BrinquedoController {
@@ -16,7 +19,7 @@ public class BrinquedoController {
     @Autowired
     private BrinquedoDAO dao;
 
-    @GetMapping()
+    @GetMapping("/buscar-por-id")
     public Brinquedo buscar(@RequestParam int id){
         Brinquedo brinquedo = new Brinquedo();
         try {
@@ -25,6 +28,17 @@ public class BrinquedoController {
             System.out.println(e.getMessage());
         }
         return brinquedo;
+    }
+    @GetMapping()
+    public List<Brinquedo> buscarTodos(){
+        List<Brinquedo> lista = new ArrayList<>();
+        try {
+            lista = dao.buscarTodos();
+          return lista;
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        return lista;
     }
 
     @PostMapping()

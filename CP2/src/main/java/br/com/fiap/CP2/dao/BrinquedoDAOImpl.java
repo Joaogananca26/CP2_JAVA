@@ -19,6 +19,10 @@ public class BrinquedoDAOImpl implements BrinquedoDAO {
         return em.find(Brinquedo.class, id);
     }
 
+    public List<Brinquedo> buscarTodos() {
+        return em.createQuery("SELECT idBrinquedo,nome,preco,tipo,tamanho from Brinquedo ").getResultStream().toList();
+    }
+
     @Override
     @Transactional
     public void salvar(Brinquedo brinquedo) {
