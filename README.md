@@ -55,6 +55,61 @@ spring.jpa.show-sql=true
 
 spring.jpa.properties.hibernate.format_sql=true
 
+## 📡 Endpoints da API
+### POST /brinquedos
+ Registra um novo brinquedo no sistema.
+
+### Exemplo de JSON para teste (via Postman):
+
+{
+
+  "nome": "woody",
+
+  "tipo": "boneco",
+
+  "classificacao": 8,
+
+  "tamanho": "medio",
+
+  "preco": 322.50
+
+}
+
+{
+
+  "idBrinquedo": 4,
+
+  "nome": "woody",
+
+  "tipo": "boneco",
+
+  "classificacao": 8,
+
+  "tamanho": "medio",
+
+  "preco": 322.50,
+
+}
+
+## GET /brinquedos
+### Consulta todos os brinquedos cadastrados no banco de dados.
+
+{
+
+  "idBrinquedo": 4,
+
+  "nome": "woody",
+
+  "tipo": "boneco",
+
+  "classificacao": 8,
+
+  "tamanho": "medio",
+
+  "preco": 322.50,
+
+}
+
 ## Testes com Postman
 
 ### Inserção via POST:
