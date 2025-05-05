@@ -133,7 +133,7 @@ Verifique se o brinquedo recém-cadastrado aparece na lista.
 ## JSON buscar por ID
 ![WhatsApp Image 2025-05-04 at 23 07 50 (1)](https://github.com/user-attachments/assets/cc0e75ea-3f6b-47a3-971a-37f2dd4aaf63)
 
-##JSON busca todos
+## JSON busca todos
 ![WhatsApp Image 2025-05-04 at 23 07 50 (2)](https://github.com/user-attachments/assets/195436bf-3e49-4da0-a767-a292de6a8269)
 
 
