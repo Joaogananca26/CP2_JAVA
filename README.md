@@ -59,7 +59,7 @@ spring.jpa.properties.hibernate.format_sql=true
 
 ### Inserção via POST:
 
-Utilize o método POST no endpoint /brinquedos com o JSON de exemplo acima para cadastrar um novo brinquedo.
+Utilize o método POST no endpoint /brinquedos com o JSON para cadastrar um novo brinquedo.
 
 Verifique a resposta para confirmar o sucesso da operação.
 
@@ -71,4 +71,15 @@ Verifique se o brinquedo recém-cadastrado aparece na lista.
 
 ## configuração final do Spring **Initializr**
 ![image](https://github.com/user-attachments/assets/c1603417-ab43-4953-ac79-d9c5192c4815)
+
+## exemplo de JSON de cadastro de brinquedo
+![WhatsApp Image 2025-05-04 at 23 07 50](https://github.com/user-attachments/assets/4e1e8793-e019-4392-8997-2b03e0dc0342)
+
+## JSON buscar por ID
+![WhatsApp Image 2025-05-04 at 23 07 50 (1)](https://github.com/user-attachments/assets/cc0e75ea-3f6b-47a3-971a-37f2dd4aaf63)
+
+##JSON busca todos
+![WhatsApp Image 2025-05-04 at 23 07 50 (2)](https://github.com/user-attachments/assets/195436bf-3e49-4da0-a767-a292de6a8269)
+
+
 
