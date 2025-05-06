@@ -1,19 +1,19 @@
 # CP2_JAVA
 Este repositório é direcionado ao CheckPoint 2 da matéria Java Advanced na FIAP
 
-# 🧸 API de Cadastro de Brinquedos
+# API de Cadastro de Brinquedos
 
 Este projeto consiste no desenvolvimento de uma API RESTful para o cadastro e consulta de brinquedos destinados a crianças de até 14 anos. A aplicação foi construída utilizando o framework **Spring Boot** com **Maven**, linguagem **Java** e banco de dados **Oracle SQL Developer**.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 Permitir a **inserção (Create)** e **consulta (Read)** de brinquedos utilizando requisições HTTP via **Postman**, com persistência dos dados em um banco Oracle e retorno das informações em formato **JSON**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - Java
 - Spring Wed
@@ -25,7 +25,7 @@ Permitir a **inserção (Create)** e **consulta (Read)** de brinquedos utilizand
 
 ---
 
-## 🗃️ Estrutura da Tabela no Oracle
+##  Estrutura da Tabela no Oracle
 
 
 | Campo         | Tipo de Dado         | Descrição                        |
@@ -39,7 +39,7 @@ Permitir a **inserção (Create)** e **consulta (Read)** de brinquedos utilizand
 
 ---
 
-## ⚙️ Configuração de Conexão - `application.properties`
+## Configuração de Conexão - `application.properties`
 
 spring.datasource.url=jdbc:oracle:thin:@//oracle.fiap.com.br:1521/ORCL
 
@@ -55,7 +55,7 @@ spring.jpa.show-sql=true
 
 spring.jpa.properties.hibernate.format_sql=true
 
-## 📡 Endpoints da API
+## Endpoints da API
 ### POST /brinquedos
  Registra um novo brinquedo no sistema.
 
