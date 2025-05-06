@@ -75,22 +75,6 @@ spring.jpa.properties.hibernate.format_sql=true
 
 }
 
-{
-
-  "idBrinquedo": 4,
-
-  "nome": "woody",
-
-  "tipo": "boneco",
-
-  "classificacao": 8,
-
-  "tamanho": "medio",
-
-  "preco": 322.50,
-
-}
-
 ## GET /brinquedos
 ### Consulta todos os brinquedos cadastrados no banco de dados.
 
@@ -135,6 +119,13 @@ Verifique se o brinquedo recém-cadastrado aparece na lista.
 
 ## JSON busca todos
 ![WhatsApp Image 2025-05-04 at 23 07 50 (2)](https://github.com/user-attachments/assets/195436bf-3e49-4da0-a767-a292de6a8269)
+
+## dependencias pom.xml
+![Capture](https://github.com/user-attachments/assets/5b2e3248-ebfa-4343-b31a-607f177e20c4)
+
+![Capture2](https://github.com/user-attachments/assets/d17b307d-3211-4c16-9184-c570b49d876f)
+
+
 
 
 
