@@ -20,7 +20,6 @@ public class BrinquedoDTO {
     @Max(value = 18, message = "Classificação máxima é 18")
     private Integer classificacao;
 
-    @NotNull(message = "O tamanho é obrigatório")
     private Tamanho tamanho;
 
     @NotNull(message = "O preço é obrigatório")
