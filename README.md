@@ -75,22 +75,6 @@ spring.jpa.properties.hibernate.format_sql=true
 
 }
 
-{
-
-  "idBrinquedo": 4,
-
-  "nome": "woody",
-
-  "tipo": "boneco",
-
-  "classificacao": 8,
-
-  "tamanho": "medio",
-
-  "preco": 322.50,
-
-}
-
 ## GET /brinquedos
 ### Consulta todos os brinquedos cadastrados no banco de dados.
 
